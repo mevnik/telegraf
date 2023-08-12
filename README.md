@@ -47,3 +47,25 @@ http://as3coder.blogspot.com/2014/08/emoji.html
 
 about env  and dotenv in node look:
  https://nodejs.dev/en/learn/how-to-read-environment-variables-from-nodejs/#telegraf
+
+
+Еще раз про github
+Создаем репазитарий. Если сразу инициализировать файл READMD не получится 
+push проекта. Можно только clone созданного репазитария:
+В пустой папке 1.git init 2.git clone https://github.com/mevnik/telegraf_bot.git (например)
+Чтобы пушить свой проект не инициализируем файл READMD и тогда действуем по схеме
+ git init
+git add . если все файлы,  или git add "name file", если конкретный файл
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/mevnik/telegraf_bot.git (например)
+git push -u origin main
+
+На любом этапе можно посмотреть git status
+
+Вместо пароля требуется ключ
+Получаем так:
+авотар->Settings->Developer settings->Personal access tokens->Tokens(или Fine-grained tokens)->Generate new token
+
+Удаление репозитория:
+в строке опций Settings-> внизу страницы Danger Zone -> Delete this repository
