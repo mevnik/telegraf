@@ -52,10 +52,11 @@ about env  and dotenv in node look:
 Еще раз про github
 Создаем репазитарий. Если сразу инициализировать файл READMD не получится 
 push проекта. Можно только clone созданного репазитария:
-В пустой папке 1.git init 2.git clone https://github.com/mevnik/telegraf_bot.git (например)
+В любой папке делаю git clone https://github.com/mevnik/telegraf_bot.git (например)
 Чтобы пушить свой проект не инициализируем файл READMD и тогда действуем по схеме
  git init
 git add . если все файлы,  или git add "name file", если конкретный файл
+   или, git add -A, если все модифицированные и добавленные файлы
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/mevnik/telegraf_bot.git (например)
@@ -69,3 +70,8 @@ git push -u origin main
 
 Удаление репозитория:
 в строке опций Settings-> внизу страницы Danger Zone -> Delete this repository
+Получение изменений сделанных кем-то в репозитарии (например, с другого компа):
+   git pull
+Можно посмотреть все команды git просто командой git.
+Если тупиковая ситуация в терминале (что-то сделали не так), нажимаем esc и вводим :wq
+
