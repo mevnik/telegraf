@@ -33,7 +33,8 @@ https://tlgrm.eu/stickers
 Вот ролики по telegraf:
 https://www.youtube.com/watch?v=IAG8-dnCdtg
 
-
+Важно! Загружать надо версию telegraf@3.38.0 --save из https://telegrafjs.org/#/?id=installation
+Не в коем случае не npm install telegraf (загрузится последняя версия 4.12 а здесь не работает Markup.callbackButton). В этой версии все иначе: https://github.com/telegraf/telegraf/releases/tag/v4.0.0
 https://telegrafjs.org/#/?id=introduction
 https://github.com/telegraf/telegraf/blob/3.38.0/docs/examples/keyboard-bot.js
 
