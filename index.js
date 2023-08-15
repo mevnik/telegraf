@@ -4,8 +4,9 @@ const {startGame} = require('./assets.js')
 
 require('dotenv').config()
 
-// TOKEN test_endy
-const bot = new Telegraf(process.env.TOKEN)
+const bot = new Telegraf(process.env.TOKEN_test_endy)
+//const bot = new Telegraf(process.env.TOKEN_test_mevnik)
+
 
 const numbers = {}
 
@@ -26,6 +27,7 @@ bot.action('one', (ctx, next) => {
 */
 
 // а можно и так
+
 bot.on('callback_query', (ctx, next) => {
   console.log('on',ctx.update.callback_query.data)
   //console.log(ctx)
@@ -41,6 +43,7 @@ bot.on('callback_query', (ctx, next) => {
     return ctx.replyWithHTML("<b>&#129397;</b>\n Continue?",againOptions)
       }
 })
+
 
 
   bot.on('message', async (ctx) => {

@@ -1,19 +1,26 @@
 {
-  "name": "front2",
+  "name": "telegram_telegraf",
   "version": "1.0.0",
-  "description": "",
+  "description": "https://www.youtube.com/watch?v=MzO-0IYkZMU&t=325s",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "start_telegraf": "nodemon index_telegraf.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mevnik/telegraf.git"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "node-telegram-bot-api": "^0.61.0",
-    "nodemon": "^3.0.1"
+  "bugs": {
+    "url": "https://github.com/mevnik/telegraf/issues"
   },
-  "devDependencies": {
-    "dotenv": "^16.3.1"
+  "homepage": "https://github.com/mevnik/telegraf#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "node-telegram-bot-api": "^0.61.0",
+    "nodemon": "^3.0.1",
+    "telegraf": "^3.38.0"
   }
 }

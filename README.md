@@ -96,5 +96,15 @@ ssh root@159.253.18.191
     cd data
     cd www
     cd «папка с нужным сайтом»
-  
+
+Подключился по ssh, создал папку telegram_bot в директории /var/www/fastuser/data/www
+Перешел в папку telegram_bot
+Выполнил команды 
+   sudo apt update (Рекомендуется сначала проделать эту команду https://pingvinus.ru/note/apt - здесь про apt)
+   sudo apt install git
+   sudo apt install nodejs
+   sudo apt install npm
+   git clone ****(с моего репозитария)
+Получил в папке telegram_bot папку telegraf
+
 
