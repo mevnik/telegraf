@@ -49,8 +49,8 @@ bot.on('callback_query', (ctx, next) => {
   bot.on('message', async (ctx) => {
     const text = ctx.message.text;
     const chatId = ctx.chat.id;
-    console.log('I get it',ctx.chat)
-    console.log('I get it_2',ctx.message.chat)
+    //console.log('I get it',ctx.chat)
+    //console.log('I get it_2',ctx.message.chat)//тоже самое
     if (text === '/start') {
         await bot.telegram.sendMessage(chatId, 'https://tlgrm.eu/_/stickers/ea5/382/ea53826d-c192-376a-b766-e5abc535f1c9/7.jpg');
         return bot.telegram.sendMessage(chatId, 'Received your message');
