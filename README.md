@@ -98,7 +98,9 @@ ssh root@159.253.18.191
     cd data
     cd www
     cd «папка с нужным сайтом»
-cd var/www/fastuser/data/www/telegram_bot/telegraf
+
+cd ../var/www/fastuser/data/www/telegram_bot/telegraf
+
 Подключился по ssh, создал папку telegram_bot в директории /var/www/fastuser/data/www
 Перешел в папку telegram_bot
 Выполнил команды 
@@ -117,6 +119,33 @@ cd var/www/fastuser/data/www/telegram_bot/telegraf
    1. Смотрим все процессы ps -ef
    2. Находим наш(nodemon index.js)
    3. Убиваем его  kill -9 (его PID)
+Выйти из ssh можно командами exit, но тогда при повторном входе требует fingeprint.
+Мне удалось решить проблему командой ssh -i ~/.ssh/authorized_keys root@159.253.18.191
+(https://askubuntu.com/questions/311558/ssh-permission-denied-publickey)
+
+для работы с базой данных инсталировал sequelize и mysql2, создал файлы db, models, подключил sequelize в файле assets, но при запуске получаю ошибку
+/var/www/fastuser/data/www/telegram_bot/telegraf/node_modules/mysql2/node_modules/lru-cache/dist/cjs/index.js:51
+    heap;
+Предположил, что дело в версии node, однако поставить версию выше 10-ой через apt не удается
+Примечание:
+   Параметры для подключения к базе (db.js)для macAir 
+               DB_NAME=myDB
+               DB_USER=root
+               DB_PASSWORD=password
+               DB_HOST=localhost
+               DB_PORT=3306
+         для mevnik@dael
+               DB_NAME=new_database
+               DB_USER=root
+               DB_PASSWORD=password
+               DB_HOST=localhost
+               DB_PORT=3306
+         для FASTVPS
+               DB_NAME=telegram
+               DB_USER=telegram_usr
+               DB_PASSWORD=CgbURcSZ6tDTBRHa
+               DB_HOST=localhost
+               DB_PORT=3306
 
 
 
