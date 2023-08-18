@@ -1,4 +1,3 @@
-/* 
 const {Sequelize} = require('sequelize');
 
 require('dotenv').config();
@@ -17,6 +16,7 @@ exports.sequelize = new Sequelize(
 
     )
 
+/* 
 // for mysql2
 const mysql = require('mysql2');
 require('dotenv').config();
@@ -28,7 +28,6 @@ exports.connection = mysql.createConnection({
   password: process.env.DB_PASSWORD,
 });
 
-*/
 //for mysql
 
 const mysql = require('mysql');
@@ -40,3 +39,4 @@ exports.connection = mysql.createConnection({
   database: process.env.DB_NAME,
   password: process.env.DB_PASSWORD,
 });
+*/

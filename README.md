@@ -128,6 +128,7 @@ cd ../var/www/fastuser/data/www/telegram_bot/telegraf
 /var/www/fastuser/data/www/telegram_bot/telegraf/node_modules/mysql2/node_modules/lru-cache/dist/cjs/index.js:51
     heap;
 Предположил, что дело в версии node, однако поставить версию выше 10-ой через apt не удается
+Обратился за поддержкой, поставили node v18, проблема решилась
 Примечание:
    Параметры для подключения к базе (db.js)для macAir 
                DB_NAME=myDB

@@ -1,4 +1,3 @@
-/*
 const{sequelize} = require('./db.js')
 
 exports.startGame = async function(ctx,gameOptions,numbers){
@@ -15,7 +14,7 @@ exports.startGame = async function(ctx,gameOptions,numbers){
        gameOptions
       )
 }
-*/
+/*
 
 const{connection} = require('./db.js')
 
@@ -38,3 +37,4 @@ exports.startGame = async function(ctx,gameOptions,numbers){
        gameOptions
       )
 }
+*/
