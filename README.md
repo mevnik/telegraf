@@ -99,6 +99,7 @@ ssh root@159.253.18.191
     cd www
     cd «папка с нужным сайтом»
 
+Или одной строкой:
 cd ../var/www/fastuser/data/www/telegram_bot/telegraf
 
 Подключился по ssh, создал папку telegram_bot в директории /var/www/fastuser/data/www
