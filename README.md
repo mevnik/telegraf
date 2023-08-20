@@ -129,15 +129,17 @@ cd ../var/www/fastuser/data/www/telegram_bot/telegraf
     heap;
 Предположил, что дело в версии node, однако поставить версию выше 10-ой через apt не удается
 Обратился за поддержкой, поставили node v18, проблема решилась
+Создал на mevik@dael и на FASTVPS базы telegram.
 Примечание:
-   Параметры для подключения к базе (db.js)для macAir 
+   Параметры для подключения к базе (db.js)
+         для macAir (здесь базу для telegram_bot не создавал)
                DB_NAME=myDB
                DB_USER=root
                DB_PASSWORD=password
                DB_HOST=localhost
                DB_PORT=3306
          для mevnik@dael
-               DB_NAME=new_database
+               DB_NAME=telegram
                DB_USER=root
                DB_PASSWORD=password
                DB_HOST=localhost
@@ -149,6 +151,10 @@ cd ../var/www/fastuser/data/www/telegram_bot/telegraf
                DB_HOST=localhost
                DB_PORT=3306
 
+Методы sequelize:
+https://sequelize.org/docs/v6/core-concepts/model-querying-finders/
+Запросы mysql:
+https://dev.mysql.com/doc/refman/8.0/en/insert.html
 
 
 
